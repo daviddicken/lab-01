@@ -1,0 +1,50 @@
+div{
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  width: 480px;
+}
+
+#a{
+  height: 75px;
+  line-height: 75px;
+}
+
+#b{
+  height: 150px;
+  line-height: 150px;
+}
+
+.cd{
+  height: 125px;
+  line-height: 125px;
+}
+
+.efgh{
+  height: 250px;
+  width: 240px;
+  float: left;
+  line-height: 250px;
+}
+
+#upper-wrapper{
+  border: none;
+  padding: 0;
+  /* float: left; */
+  display: inline;
+}
+
+#lower-wrapper{
+  border: none;
+  padding: 0;
+  /* float: left; */
+  display: inline; 
+  clear: both;
+}
+
+#i{
+  height: 80px;
+  clear: both;
+  line-height: 80px;
+
+}
