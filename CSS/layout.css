@@ -1,9 +1,9 @@
 body{
   width: 480px;
-  /* Classmate Claudio showed me how to center content  */
-  margin: auto;
 }
+
 div{
+  background-color: lightgreen;
   border: 1px solid black;
   padding: 10px;
   text-align: center;
@@ -32,26 +32,19 @@ div{
   line-height: 250px;
 }
 
-#upper-wrapper{
+#wrapper{
   border: none;
   padding: 0;
-  /* float: left; */
-  /* display: inline; */
 }
 
-#lower-wrapper{
-  border: none;
-  padding: 0;
-  /* float: left; */
-  /* display: inline;  */
-  /* clear: both; */
-}
 
 #i{
   height: 80px;
   clear: both;
   line-height: 80px;
 }
+
+/* ================ Desktop ============= */
 
 @media only screen and (min-width:480px){
 
@@ -61,6 +54,7 @@ div{
     margin: auto;
   }
   div{
+    background-color:  lightblue;
     border: 1px solid black;
     padding: 0px;
     text-align: center;
@@ -84,7 +78,6 @@ div{
     width: 380px;
     line-height: 200px;
     float: left;
-    /* clear: both; */
   }
   
   .efgh{
@@ -94,19 +87,9 @@ div{
     line-height: 250px;
   }
   
-  #upper-wrapper{
+  #wrapper{
     border: none;
     padding: 0;
-    /* float: left; */
-    /* display: inline; */
-  }
-  
-  #lower-wrapper{
-    border: none;
-    padding: 0;
-    /* float: left; */
-    /* display: inline;  */
-    /* clear: both; */
   }
   
   #i{
