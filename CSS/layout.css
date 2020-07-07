@@ -1,3 +1,8 @@
+body{
+  width: 480px;
+  /* Classmate Claudio showed me how to center content  */
+  margin: auto;
+}
 div{
   border: 1px solid black;
   padding: 10px;
@@ -31,20 +36,88 @@ div{
   border: none;
   padding: 0;
   /* float: left; */
-  display: inline;
+  /* display: inline; */
 }
 
 #lower-wrapper{
   border: none;
   padding: 0;
   /* float: left; */
-  display: inline; 
-  clear: both;
+  /* display: inline;  */
+  /* clear: both; */
 }
 
 #i{
   height: 80px;
   clear: both;
   line-height: 80px;
+}
+
+@media only screen and (min-width:480px){
+
+  body{
+    width: 960px;
+    /* Classmate Claudio showed me how to center content  */
+    margin: auto;
+  }
+  div{
+    border: 1px solid black;
+    padding: 0px;
+    text-align: center;
+    width: 960px;
+  }
+  
+  #a{
+    height: 100px;
+    line-height: 100px;
+  }
+  
+  #b{
+    height: 600px;
+    width: 200px;
+    line-height: 600px;
+    float: left;
+  }
+  
+  .cd{
+    height: 200px;
+    width: 380px;
+    line-height: 200px;
+    float: left;
+    /* clear: both; */
+  }
+  
+  .efgh{
+    height: 250px;
+    width: 190px;
+    float: left;
+    line-height: 250px;
+  }
+  
+  #upper-wrapper{
+    border: none;
+    padding: 0;
+    /* float: left; */
+    /* display: inline; */
+  }
+  
+  #lower-wrapper{
+    border: none;
+    padding: 0;
+    /* float: left; */
+    /* display: inline;  */
+    /* clear: both; */
+  }
+  
+  #i{
+    height: 150px;
+    width: 760px;
+    float: right;
+    clear: right;
+    line-height: 150px;
+  }
+
+
+
 
 }
