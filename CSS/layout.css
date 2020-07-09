@@ -10,50 +10,140 @@ div{
   width: 480px;
 }
 
-#a{
+main{
+  display: flex;
+  flex-direction: column;
+
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+main > div:nth-child(1)
+{
   height: 75px;
   line-height: 75px;
+  background-color: orange;
 }
 
-#b{
+main > div:nth-child(2)
+{
   height: 150px;
   line-height: 150px;
+  background-color: orangered;
 }
 
-.cd{
+main > div:nth-child(3),
+main > div:nth-child(4)
+{
   height: 125px;
   line-height: 125px;
+  background-color: palegoldenrod;
 }
 
-.efgh{
+section > div{
   height: 250px;
   width: 240px;
-  float: left;
   line-height: 250px;
+  background-color: rgb(107, 119, 107);
 }
 
-#wrapper{
-  border: none;
-  padding: 0;
-}
-
-
-#i{
+main > div:last-of-type
+{
   height: 80px;
-  clear: both;
   line-height: 80px;
+  background-color: plum;
 }
 
 /* ================ Desktop ============= */
 
-@media only screen and (min-width:480px){
-
+@media only screen and (min-width:768px){
   body{
     width: 960px;
     /* Classmate Claudio showed me how to center content  */
     margin: auto;
   }
   div{
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  
+  }
+  section{
+    display: flex;
+    margin-left: auto;
+    order:-1;
+    
+    
+  
+
+    
+    /* flex-direction: row wrap;
+    justify-content:flex-end;
+    align-self: right;
+    flex-wrap: wrap; */
+    
+    
+  }
+  
+  main > div:nth-child(1)
+  {
+    height: 100px;
+    width: 960px;
+    line-height: 100px;
+    background-color: powderblue;
+    order:-1;
+  }
+  
+  main > div:nth-child(2)
+  {
+    height: 600px;
+    width: 200px;
+    line-height: 600px;
+    background-color: rgb(174, 0, 255);
+    order:-1;
+    
+  }
+  
+  main > div:nth-child(3),
+  main > div:nth-child(4)
+  {
+    width: 380px;
+    height: 200px;
+    line-height: 200px;
+    background-color: purple;
+    order:-1;
+  }
+  
+  section > div{
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    background-color: sandybrown;
+  
+  }
+  
+  main > div:last-of-type
+  {
+    width: 960px;
+    height: 150px;
+    line-height: 150px;
+    background-color: springgreen;
+    order: 3;
+  }
+
+  /*
+  div{ 
     background-color:  lightblue;
     border: 1px solid black;
     padding: 0px;
@@ -98,7 +188,7 @@ div{
     float: right;
     clear: right;
     line-height: 150px;
-  }
+  }  */
 
 
 
