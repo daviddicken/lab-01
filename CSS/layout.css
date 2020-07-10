@@ -43,6 +43,27 @@ main > div:nth-child(4)
   background-color: palegoldenrod;
 }
 
+/* main > div:nth-child(5),
+main > div:nth-child(7){
+  height: 250px;
+  width: 240px;
+  line-height: 250px;
+  background-color: rgb(107, 119, 107);
+  flex-wrap: wrap;
+  margin-left: auto;
+  
+}
+main > div:nth-child(6),
+main > div:nth-child(8){
+  height: 250px;
+  width: 240px;
+  line-height: 250px;
+  background-color: rgb(107, 119, 107);
+  flex-wrap: wrap;
+  
+} */
+
+
 section > div{
   height: 250px;
   width: 240px;
@@ -60,9 +81,16 @@ main > div:last-of-type
 /* ================ Desktop ============= */
 
 @media only screen and (min-width:768px){
+
+
+
+
+
+
+
+  /* /* ============= flex attempt ================== */
   body{
     width: 960px;
-    /* Classmate Claudio showed me how to center content  */
     margin: auto;
   }
   div{
@@ -83,15 +111,7 @@ main > div:last-of-type
     display: flex;
     margin-left: auto;
     order:-1;
-    
-    
-  
 
-    
-    /* flex-direction: row wrap;
-    justify-content:flex-end;
-    align-self: right;
-    flex-wrap: wrap; */
     
     
   }
@@ -141,7 +161,7 @@ main > div:last-of-type
     background-color: springgreen;
     order: 3;
   }
-
+/* ============ original =================  */
   /*
   div{ 
     background-color:  lightblue;
