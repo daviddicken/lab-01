@@ -1,0 +1,123 @@
+body{
+  width: 480px;
+}
+
+div{
+  background-color: lightgreen;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  width: 480px;
+}
+
+#a{
+  height: 75px;
+  line-height: 75px;
+}
+
+#b{
+  height: 150px;
+  line-height: 150px;
+}
+
+.cd{
+  height: 125px;
+  line-height: 125px;
+}
+
+.efgh{
+  height: 250px;
+  width: 240px;
+  float: left;
+  line-height: 250px;
+}
+
+#wrapper{
+  /* grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%; */
+  border: none;
+  padding: 0;
+}
+
+#wrapper div:first-child
+{
+  background-color: lightgrey;
+}
+
+#wrapper div:nth-child(2)
+{
+  background-color: lightskyblue;
+  grid-column: 2;
+  grid-row: 2;
+  order: -1;
+   ;
+
+}
+
+
+#i{
+  height: 80px;
+  clear: both;
+  line-height: 80px;
+}
+
+/* ================ Desktop ============= */
+
+@media only screen and (min-width:768px){
+
+  body{
+    width: 960px;
+    /* Classmate Claudio showed me how to center content  */
+    margin: auto;
+  }
+  div{ 
+    background-color:  lightblue;
+    border: 1px solid black;
+    padding: 0px;
+    text-align: center;
+    width: 960px;
+  }
+  
+  #a{
+    height: 100px;
+    line-height: 100px;
+  }
+  
+  #b{
+    height: 600px;
+    width: 200px;
+    line-height: 600px;
+    float: left;
+  }
+  
+  .cd{
+    height: 200px;
+    width: 380px;
+    line-height: 200px;
+    float: left;
+  }
+  
+  .efgh{
+    height: 250px;
+    width: 190px;
+    float: left;
+    line-height: 250px;
+  }
+  
+  #wrapper{
+    border: none;
+    padding: 0;
+  }
+  
+  #i{
+    height: 150px;
+    width: 760px;
+    float: right;
+    clear: right;
+    line-height: 150px;
+  }
+
+
+
+
+}
