@@ -108,9 +108,11 @@ main > div:last-of-type
   
   }
   section{
-    display: flex;
-    margin-left: auto;
-    order:-1;
+    /* display: flex; */
+    /* margin-left: auto; */
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
 
     
     
@@ -122,30 +124,34 @@ main > div:last-of-type
     width: 960px;
     line-height: 100px;
     background-color: powderblue;
-    order:-1;
+    
   }
   
-  main > div:nth-child(2)
+  /* main > div:nth-child(2) */
+  #b
   {
     height: 600px;
     width: 200px;
     line-height: 600px;
     background-color: rgb(174, 0, 255);
-    order:-1;
+  
     
   }
   
-  main > div:nth-child(3),
-  main > div:nth-child(4)
+  /* main > div:nth-child(3),
+  main > div:nth-child(4) */
+  .cd
   {
     width: 380px;
     height: 200px;
     line-height: 200px;
     background-color: purple;
-    order:-1;
+   
   }
   
-  section > div{
+  /* section > div */
+  .efgh
+  {
     height: 250px;
     width: 190px;
     line-height: 250px;
@@ -159,8 +165,7 @@ main > div:last-of-type
     height: 150px;
     line-height: 150px;
     background-color: springgreen;
-    order: 3;
-  }
+    
 /* ============ original =================  */
   /*
   div{ 
